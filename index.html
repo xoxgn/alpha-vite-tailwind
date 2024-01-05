@@ -7,7 +7,81 @@
         <title>Vite + TS</title>
     </head>
     <body>
-        <div class="bg-green-500">Gimme gimmme gimme</div>
+        <div
+            class="bg-gray-200 min-h-screen p-8 flex items-center justify-center"
+        >
+            <div
+                data-tag="card"
+                class="bg-orange-700 rounded-lg overflow-hidden w-[560px]"
+            >
+                <div data-tag="content" class="bg-white p-6 mt-10 mb-5">
+                    <div class="flex h-24">
+                        <header class="w-3/5">
+                            <h4
+                                data-tag="coffee-name"
+                                class="text-2xl uppercase font-bold"
+                            >
+                                Ethiopia <br />Rocko Mountain
+                            </h4>
+                            <p
+                                data-tag="coffee-flavours"
+                                class="mt-2 uppercase font-medium text-sm"
+                            >
+                                Blueberry, Strawberry, Chocolate
+                            </p>
+                        </header>
+                        <aside
+                            data-tag="coffee-award-stamp"
+                            class="w-2/5 relative"
+                        >
+                            <!-- class="w-24 h-24" -->
+                            <img
+                                src="/jakub-dziubak-XtUd5SiX464-unsplash.jpg"
+                                alt=""
+                                class="h-full w-full object-cover absolute inset-0"
+                            />
+
+                            <svg
+                                class="absolute inset-y-0 h-full fill-current text-white w-24 -ml-12"
+                                preserveAspectRation="none"
+                                viewBox="0 0 100 100"
+                            >
+                                <polygon points="50,0 100,0 50,100 0,100" />
+                            </svg>
+                        </aside>
+                    </div>
+
+                    <dl
+                        data-tag="coffee-attribute-list"
+                        class="flex my-6 border-y-2 border-orange-700 py-2 px-4"
+                    >
+                        <div data-tag="coffee-attribute" class="w-1/4">
+                            <dt>Process</dt>
+                            <dd>Natural</dd>
+                        </div>
+
+                        <div data-tag="coffee-attribute" class="w-1/4">
+                            <dt>Altitude</dt>
+                            <dd>2150 masl</dd>
+                        </div>
+
+                        <div data-tag="coffee-attribute" class="w-1/4">
+                            <dt>Variety</dt>
+                            <dd>Heirloom</dd>
+                        </div>
+
+                        <div data-tag="coffee-attribute" class="w-1/4">
+                            <dt>Location</dt>
+                            <dd>Yirgacheffe</dd>
+                        </div>
+                    </dl>
+
+                    <p data-tag="coffee-roast-date">
+                        Date roasted: <strong>18 Oct 2023</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div id="app"></div>
         <script type="module" src="/src/main.ts"></script>
     </body>
